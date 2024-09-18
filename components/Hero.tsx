@@ -3,11 +3,17 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FloatingDock } from "./ui/FloatingDock";
-import { IconBrandGithub, IconBrandTwitterFilled } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconBrandLinkedin,
+  IconBrandInstagram,
+} from "@tabler/icons-react";
+import { AnimatedTooltip } from "./ui/AnimatedTooltip";
+import { techStack } from "../data/index";
 
 const Hero = () => {
   const links = [
-    
     {
       title: "GitHub",
       icon: (
@@ -18,13 +24,28 @@ const Hero = () => {
     {
       title: "X",
       icon: (
-        <IconBrandTwitterFilled className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+        <IconBrandX className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+      ),
+      href: "#",
+    },
+    {
+      title: "LinkedIn",
+      icon: (
+        <IconBrandLinkedin className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+      ),
+      href: "#",
+    },
+    {
+      title: "Instagram",
+      icon: (
+        <IconBrandInstagram className='h-full w-full text-neutral-500 dark:text-neutral-300' />
       ),
       href: "#",
     },
   ];
+
   return (
-    <div className='relative min-h-screen flex flex-col justify-center items-center pb-20 pt-36'>
+    <div id="Hero" className='relative min-h-screen flex flex-col justify-center items-center pb-20 pt-36'>
       <div className='absolute inset-0 pointer-events-none'>
         <Spotlight
           className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen'
@@ -79,8 +100,12 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      
+      <div className='flex flex-row items-center justify-center mb-10 w-full'>
+        <AnimatedTooltip items={techStack} />
+      </div>
 
-      <div className='flex items-center  w-full'>
+      <div className='flex items-center w-full'>
         <FloatingDock items={links} />
       </div>
     </div>
