@@ -1,151 +1,89 @@
-import Image from "next/image";
+
 import { Timeline } from "@/components/ui/Timeline";
-import { BackgroundBeams } from "./ui/BackgroundBeams";
+import { WobbleCard } from "./ui/WobbleCard";
 
 const WorkExperience = () => {
   const experienceTimeline = [
     {
-      title: "2023 - Present",
+      title: "Aug 2023 - Present",
       content: (
-        <div>
-          <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8'>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+        <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-black-800 min-h-[500px] lg:min-h-[300px]"
+        
+      >
+          <p className='text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-semibold mb-4'>
+            <strong>Technology Analyst</strong> at Infosys | Chandigarh
           </p>
-          <div className='grid grid-cols-2 gap-4'>
-            <Image
-              src='https://assets.aceternity.com/templates/startup-1.webp'
-              alt='startup template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/templates/startup-2.webp'
-              alt='startup template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-          </div>
-        </div>
+          <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-4'>
+            <strong>Bank Of America (BoFA)</strong>
+          </p>
+          <ul className='list-disc list-inside space-y-2 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm'>
+            <li>Developed scalable, secure, and high-performance web applications to meet the financial services needs of BOFA.</li>
+            <li>Collaborated with backend teams to integrate complex data storage solutions and ensure seamless application functionality.</li>
+            <li>Implemented responsive, practical, user-friendly interfaces using React, enhancing the client’s digital banking experience.</li>
+            <li>Optimized application performance and automated workflows, reducing response times and improving overall efficiency across the platform.</li>
+          </ul>
+        </WobbleCard>
       ),
     },
     {
-      title: "Early 2023",
+      title: "May 2022 - Feb 2023",
       content: (
-        <div>
-          <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8'>
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+        <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-black-800 min-h-[500px] lg:min-h-[300px]">
+          <p className='text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-semibold mb-4'>
+            <strong>Frontend Developer</strong> at ValueCoders | Remote
           </p>
-          <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8'>
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
-          <div className='grid grid-cols-2 gap-4'>
-            <Image
-              src='https://assets.aceternity.com/pro/hero-sections.png'
-              alt='hero template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/features-section.png'
-              alt='feature template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/pro/bento-grids.png'
-              alt='bento template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/cards.png'
-              alt='cards template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-          </div>
-        </div>
+          <ul className='list-disc list-inside space-y-2 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm'>
+            <li>Fixed banking web application for comparing different investments.</li>
+            <li>Responsible for managing a team of 5 to successfully complete a banking web application overhaul, reducing page load times, and improving user satisfaction based on client feedback.</li>
+            <li>Improved investment comparison feature, leading to better user engagement and a smoother financial product comparison process.</li>
+            <li>Application was built on Next.js for the frontend and using Node.js/Express with MongoDB for the backend.</li>
+            <li>Created reusable components for the Figma design provided by the UX team.</li>
+          </ul>
+        </WobbleCard>
       ),
     },
     {
-      title: "Changelog",
+      title: "May 2020 - Oct 2021",
       content: (
-        <div>
-          <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4'>
-            Deployed 5 new components on Aceternity today
+        <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-black-800 min-h-[500px] lg:min-h-[300px]">
+          <p className='text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-semibold mb-4'>
+            <strong>Frontend Developer</strong> at Gratific Pvt Ltd | Remote
           </p>
-          <div className='mb-8'>
-            <div className='flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm'>
-              ✅ Card grid component
-            </div>
-            <div className='flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm'>
-              ✅ Startup template Aceternity
-            </div>
-            <div className='flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm'>
-              ✅ Random file upload lol
-            </div>
-            <div className='flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm'>
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className='flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm'>
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
-          <div className='grid grid-cols-2 gap-4'>
-            <Image
-              src='https://assets.aceternity.com/pro/hero-sections.png'
-              alt='hero template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/features-section.png'
-              alt='feature template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/pro/bento-grids.png'
-              alt='bento template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-            <Image
-              src='https://assets.aceternity.com/cards.png'
-              alt='cards template'
-              width={500}
-              height={500}
-              className='rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]'
-            />
-          </div>
-        </div>
+          <ul className='list-disc list-inside space-y-2 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm'>
+            <li>Gratific is a product company related to hospitality, F&B areas.</li>
+            <li>Built reusable components for various products by writing code in manageable chunks.</li>
+            <li>Developed frontend using JSX and CSS3.</li>
+            <li>Collaborated with different teams working on various tools to ensure seamless integrations.</li>
+          </ul>
+        </WobbleCard>
+      ),
+    },
+    {
+      title: "Sep 2018 - Apr 2020",
+      content: (
+        <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-black-800 min-h-[500px] lg:min-h-[300px]">
+          <p className='text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-semibold mb-4'>
+            <strong>Full Stack Developer</strong> at PatientBond | Mohali
+          </p>
+          <ul className='list-disc list-inside space-y-2 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm'>
+            <li>The current Engagement market utilizes one-size-fits-all solutions to reach out to patients and members, minimizing impact and building concerns about message fatigue.</li>
+            <li>Created web application using React.js.</li>
+            <li>Integrated frontend with backend and databases, including MongoDB.</li>
+            <li>Creation of RESTful API endpoints and worked with the front-end to ensure seamless integrations.</li>
+            <li>Reduced patient outreach effort through the development of automated workflows and RESTful APIs, improving communication efficiency for healthcare providers.</li>
+          </ul>
+        </WobbleCard>
       ),
     },
   ];
-  return (
-    <div id="workExperience">
-    {/* <div
-        className='absolute inset-0 w-full min-h-screen dark:bg-black-100 bg-white 
-        dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] flex items-center justify-center'
-      >
-        
-        <div
-          className='absolute inset-0 pointer-events-none flex items-center justify-center dark:bg-black-100
-          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'
-        />
-      </div> */}
+  
 
+  return (
+    <div id='workExperience'>
       <Timeline data={experienceTimeline} />
     </div>
   );

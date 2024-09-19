@@ -2,50 +2,13 @@ import { BsDownload } from "react-icons/bs";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { FloatingDock } from "./ui/FloatingDock";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconBrandLinkedin,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
-import { AnimatedTooltip } from "./ui/AnimatedTooltip";
-import { techStack } from "../data/index";
 
 const Hero = () => {
-  const links = [
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className='h-full w-full text-neutral-500 dark:text-neutral-300' />
-      ),
-      href: "#",
-    },
-    {
-      title: "X",
-      icon: (
-        <IconBrandX className='h-full w-full text-neutral-500 dark:text-neutral-300' />
-      ),
-      href: "#",
-    },
-    {
-      title: "LinkedIn",
-      icon: (
-        <IconBrandLinkedin className='h-full w-full text-neutral-500 dark:text-neutral-300' />
-      ),
-      href: "#",
-    },
-    {
-      title: "Instagram",
-      icon: (
-        <IconBrandInstagram className='h-full w-full text-neutral-500 dark:text-neutral-300' />
-      ),
-      href: "#",
-    },
-  ];
-
   return (
-    <div id="Hero" className='relative min-h-screen flex flex-col justify-center items-center pb-20 pt-36'>
+    <div
+      id='Hero'
+      className='relative min-h-screen flex flex-col justify-center items-center pb-20 pt-36'
+    >
       <div className='absolute inset-0 pointer-events-none'>
         <Spotlight
           className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen'
@@ -91,22 +54,14 @@ const Hero = () => {
             Hi! I&apos;m Vipul Kandal, a Next.js Developer based in India.
           </p> */}
 
-          <a href='#about'>
-            <MagicButton
+          <a href='/assets/cv.pdf' target='_blank' rel='noopener noreferrer'>
+            <MagicButton // Adjust the path to your PDF file
               title='Download CV'
               icon={<BsDownload />}
               position='right'
             />
           </a>
         </div>
-      </div>
-      
-      <div className='flex flex-row items-center justify-center mb-10 w-full'>
-        <AnimatedTooltip items={techStack} />
-      </div>
-
-      <div className='flex items-center w-full'>
-        <FloatingDock items={links} />
       </div>
     </div>
   );
