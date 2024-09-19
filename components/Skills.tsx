@@ -36,7 +36,7 @@ const SkillsPage = () => {
           duration: 0.8,
           ease: 'easeInOut',
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-white py-4 bg-clip-text text-center  tracking-tight text-transparent md:text-7xl text-7xl font-bold mb-8 pt-20"
       >
         Technical Skills
       </motion.h1>

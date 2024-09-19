@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { FloatingDock } from "./ui/FloatingDock";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
@@ -442,24 +441,11 @@ const Contact = () => {
     >
       <div className='relative max-w-7xl mx-auto w-full h-full px-4'>
         {/* Header */}
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className='z-50 relative'
-        >
-          <h2 className='text-center text-5xl md:text-4xl font-bold text-black dark:text-white'>
+        
+          <h2 className='text-7xl font-bold mb-8 text-center'>
             Ways to get in touch
           </h2>
-        </motion.div>
+       
 
         {/* Globe */}
         <div className='absolute inset-0 h-full z-10'>
