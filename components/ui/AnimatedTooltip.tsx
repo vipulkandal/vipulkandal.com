@@ -34,7 +34,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item) => (
         <div
-          className="mr-4 relative group"
+          className="mr-1 relative group"
           key={item.id}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -72,7 +72,7 @@ export const AnimatedTooltip = ({
           </AnimatePresence>
           <div
             onMouseMove={handleMouseMove}
-            className="h-14 w-14 flex items-center justify-center rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-white relative transition duration-500"
+            className="h-12 w-12 flex items-center justify-center rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-white relative transition duration-500"
           >
             {item.icon}
           </div>

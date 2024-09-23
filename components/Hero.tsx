@@ -34,7 +34,7 @@ const Hero = () => {
 
       <div className='relative z-10 flex justify-center my-20'>
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <p className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
+          <p className='uppercase tracking-widest text-sm lg:text-2xl  text-center text-blue-100 max-w-80'>
             Software Developer
           </p>
 
@@ -46,16 +46,12 @@ const Hero = () => {
           {/* Uncomment the following for actual use */}
           <TextGenerateEffect
             words={`Hi, I'm Vipul Kandal, Turning Ideas into Scalable Software Solutions`}
-            // words={`Hi, I'm Vipul Kandal, crafting digital experiences that bring ideas to life!`}
-            className='text-center text-[40px] md:text-5xl lg:text-6xl'
+            className='text-center text-[40px] text-2xl lg:text-6xl'
           />
 
-          {/* <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi! I&apos;m Vipul Kandal, a Next.js Developer based in India.
-          </p> */}
 
           <a href='/assets/cv.pdf' target='_blank' rel='noopener noreferrer'>
-            <MagicButton // Adjust the path to your PDF file
+            <MagicButton 
               title='Download CV'
               icon={<BsDownload />}
               position='right'

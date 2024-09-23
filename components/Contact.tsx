@@ -442,8 +442,8 @@ const Contact = () => {
       <div className='relative max-w-7xl mx-auto w-full h-full px-4'>
         {/* Header */}
         
-          <h2 className='text-7xl font-bold mb-8 text-center'>
-            Ways to get in touch
+          <h2 className='text-4xl md:text-7xl font-bold mb-8 text-center'>
+            Ways to <span className="text-purple">get in touch</span>
           </h2>
        
 

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Timeline } from "@/components/ui/Timeline";
 import { WobbleCard } from "./ui/WobbleCard";
@@ -7,7 +7,7 @@ import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const WorkExperience = () => {
-  const items = [
+  const infosysTechStack = [
     {
       id: 1,
       name: "React",
@@ -38,8 +38,8 @@ const WorkExperience = () => {
           <p className='text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-medium mb-4'>
             <strong>Bank Of America (BoFA)</strong>
           </p>
-          <div className='flex flex-row  items-center  mb-10 w-full'>
-            <AnimatedTooltip items={items} />
+          <div className='flex flex-row  items-center  mb-6 w-full'>
+            <AnimatedTooltip items={infosysTechStack} />
           </div>
           <ul className='list-disc list-inside space-y-2 text-neutral-600 dark:text-neutral-400 text-xs md:text-sm'>
             <li>
@@ -154,19 +154,20 @@ const WorkExperience = () => {
 
   return (
     <div id='workExperience'>
-       <div className="flex flex-col items-center justify-center">
-   
-      <motion.h2
-        className="text-7xl font-bold mb-8 pt-20"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        Work Experience
-      </motion.h2>
-
-      
-    </div>
+      <div className='flex flex-col items-center justify-center'>
+        <motion.h2
+          className='text-4xl md:text-7xl font-bold pt-20'
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+        >
+          Work <span className='text-purple'>Experience</span>
+        </motion.h2>
+      </div>
       <Timeline data={experienceTimeline} />
     </div>
   );
