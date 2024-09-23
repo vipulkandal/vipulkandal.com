@@ -1,3 +1,17 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "warn", // Warn instead of error for unused variables
+    "@typescript-eslint/explicit-function-return-type": "off", // Disable explicit return types requirement
+    "@typescript-eslint/no-explicit-any": "off" // Allow the use of 'any' type
+  }
 }

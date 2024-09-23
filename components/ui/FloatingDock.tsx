@@ -13,12 +13,12 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 
 // Function to copy email to clipboard
-const handleEmailCopy = () => {
-  const email = "your-email@example.com";
-  navigator.clipboard.writeText(email).then(() => {
-    alert(`Email address copied to clipboard: ${email}`);
-  });
-};
+// const handleEmailCopy = () => {
+//   const email = "your-email@example.com";
+//   navigator.clipboard.writeText(email).then(() => {
+//     alert(`Email address copied to clipboard: ${email}`);
+//   });
+// };
 
 export const FloatingDock = ({
   items,

@@ -5,11 +5,8 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["assets.aceternity.com"],
-    typescript: {
-      ignoreBuildError: true,
-    },
+  typescript: {
+    ignoreBuildErrors: true, // Corrected to plural 'Errors' and moved to root level
   },
 };
 

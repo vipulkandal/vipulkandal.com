@@ -74,7 +74,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiTypescript } from "react-icons/si";
-import { LampContainer } from "./ui/Lamp";
+// import { LampContainer } from "./ui/Lamp";
 import { motion } from "framer-motion";
 
 const SkillsPage = () => {
