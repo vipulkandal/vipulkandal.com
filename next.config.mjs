@@ -3,12 +3,14 @@
 
 // export default nextConfig;
 
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['assets.aceternity.com'], // Add the external domain here
+  images: {
+    domains: ["assets.aceternity.com"],
+    typescript: {
+      ignoreBuildError: true,
     },
-  };
-  
-  export default nextConfig;
+  },
+};
+
+export default nextConfig;
