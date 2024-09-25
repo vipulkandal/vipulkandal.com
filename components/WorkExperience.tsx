@@ -4,7 +4,7 @@ import { Timeline } from "@/components/ui/Timeline";
 import { WobbleCard } from "./ui/WobbleCard";
 import { AnimatedTooltip } from "./ui/AnimatedTooltip";
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { motion } from "framer-motion";
+import Heading from "./Heading";
 
 const WorkExperience = () => {
   const infosysTechStack = [
@@ -154,20 +154,7 @@ const WorkExperience = () => {
 
   return (
     <div id='workExperience'>
-      <div className='flex flex-col items-center justify-center'>
-        <motion.h2
-          className='text-4xl md:text-7xl font-bold pt-20'
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-        >
-          Work <span className='text-purple'>Experience</span>
-        </motion.h2>
-      </div>
+      <Heading text='Work Experience' highlightedText={["Experience"]} />
       <Timeline data={experienceTimeline} />
     </div>
   );

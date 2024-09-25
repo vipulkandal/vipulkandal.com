@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ProofOfWork from "@/components/ProofOfWork";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Skills />
+      <ProofOfWork />
       <WorkExperience />
       <Contact />
     </main>
